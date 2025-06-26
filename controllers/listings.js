@@ -64,7 +64,7 @@ module.exports.showListing = async(req, res) => {
         res.redirect("/listings");
     }
     console.log(listing);
-    res.render("Listings/show", {listing});
+    res.render("listings/show", {listing});
 }
 
 

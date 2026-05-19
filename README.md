@@ -55,7 +55,7 @@ Wanderlust is a full-stack web application that allows users to explore, create,
 
 ## 🌍 Live Demo
 
-🚧 **Hosted at**: [https://wanderlust.onrender.com](https://wanderlust-d548.onrender.com/)  
+🚧 **Hosted at**: [https://wanderlust.onrender.com](https://wanderlust-2-d2a7.onrender.com)  
 
 
 

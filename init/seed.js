@@ -17,7 +17,7 @@ async function main() {
     // Step 1: Add owner
     const listingsWithOwner = initData.data.map((listing) => ({
       ...listing,
-      owner: "6856ea566542441fb0df1f92", // Replace with actual user ID if different
+      owner: "6a0c1a11f58d674e7ea1c8af", // Replace with actual user ID if different
     }));
 
     // Step 2: Add category based on title

@@ -25,22 +25,6 @@ module.exports.index = async (req, res) => {
     }
 
 
-    // try {
-    //     const { category } = req.query;
-    //     let allListings;
-
-    //     if (category) {
-    //         allListings = await Listing.find({ category: category });
-    //     } else {
-    //         allListings = await Listing.find({});
-    //     }
-
-    //     res.render("listings/index", { allListings });
-    // } catch (err) {
-    //     console.log("Error fetching listings:", err);
-    //     res.redirect("/");
-    // }
-
 };
 
 module.exports.renderNewForm = (req, res) => {

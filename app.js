@@ -47,8 +47,8 @@ const store = MongoStore.create({
     },
     touchAfter: 24*3600,
 });
-store.on("error", ()=>{
-    console.log("ERROR in MONGO SESSION STORE" , err);
+store.on("error", (err)=>{
+    console.log("ERROR in MONGO SESSION STORE", err);
 });
 
 const sessionOptions = {
@@ -64,7 +64,7 @@ const sessionOptions = {
     }
 };
 
-
+app.set("trust proxy", 1);
 app.use(session(sessionOptions));
 app.use(flash());
 
@@ -122,10 +122,15 @@ app.use((err, req, res, next) =>{
 // app.listen(8080, () =>{
 //     console.log("server is listening to port 8080")
 // });
-app.listen(3000, (err) => {
-    if (err) {
-        console.log("Error in starting server:", err);
-    } else {
-        console.log("server is listening to port 3000");
-    }
+// app.listen(3000, (err) => {
+//     if (err) {
+//         console.log("Error in starting server:", err);
+//     } else {
+//         console.log("server is listening to port 3000");
+//     }
+// });
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log(`server is listening on port ${port}`);
 });
